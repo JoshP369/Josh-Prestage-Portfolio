@@ -50,6 +50,7 @@ h4 {
 h5 {
   font-size: 18px;
   font-weight: 400;
+  color: var(--color-black);
 }
 
 a {
@@ -225,7 +226,6 @@ header {
 
 
 /*...................... Start About Section ......................*/
-
 #About {
   margin-top: 100px;
 }
@@ -262,8 +262,11 @@ header {
 .edu-box img {
   margin: auto;
 }
-
 /*...................... End Projects Section ......................*/
+
+
+
+
 #Projects {
   margin-top: 100px;
 }
@@ -285,7 +288,7 @@ header {
 
 #projectGrid {
   display: grid;
-  grid-template-rows: 500px 300px 300px;
+    grid-template-rows: 500px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "webmaster webmaster"
@@ -295,33 +298,33 @@ header {
 
 #webmaster {
   grid-area: webmaster;
-  background-image: url("https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2012/03/What-Is-a-Website-and-How-Does-It-Work.png");
+  background-image: url("../images/webmaster.png");
 }
+
 #infinity {
   grid-area: infinity;
-  background-image: url("https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2012/03/What-Is-a-Website-and-How-Does-It-Work.png");
+  background-image: url("../images/infinity.png");
 }
 
 #voodoo {
   grid-area: voodoo;
-  background-image: url("https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2012/03/What-Is-a-Website-and-How-Does-It-Work.png");
+  background-image: url("../images/voodoo.png");
 }
 
 #skplumbing {
   grid-area: skplumbing;
-  background-image: url("https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2012/03/What-Is-a-Website-and-How-Does-It-Work.png");
+  background-image: url("../images/sk.png");
 }
 
 #tinasbeautyrooms {
   grid-area: tinasbeautyrooms;
-  background-image: url("https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2012/03/What-Is-a-Website-and-How-Does-It-Work.png");
+  background-image: url("../images/tinas.png");
 }
 
 .projectGridArea {
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
   display: grid;
   align-content: end;
@@ -335,8 +338,38 @@ header {
   font-size: 18px;
   border-bottom: 5px solid #ff6200;
 }
-
-
 /*...................... End Experience Section ......................*/
 
 
+
+/*...................... Start Contact Section ......................*/
+#Contact {
+  margin-top: 100px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 4rem;
+  }
+
+.contact-left {
+  border-right: 3px solid var(--color-dark-variant);
+  padding: 40px;
+  width: 30%;
+}
+
+.contact-right {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.email, .linkedin, .number, .github {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+/*...................... End Contact Section ......................*/

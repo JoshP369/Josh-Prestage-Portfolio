@@ -10,15 +10,6 @@
   scroll-behavior: smooth;
 }
 
-:root {
-  --color-yellow: #fafe00;
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-dark: #555555;
-  --color-dark-variant: #353535;
-  --transition: 0.4 ease;
-}
-
 h1,
 h2,
 h3,
@@ -29,43 +20,43 @@ h5 {
 
 h1 {
   font-size: 48px;
-  color: var(--color-dark-variant);
+  color: black;
 }
 
 h2 {
-  font-size: 28px;
-  color: var(--color-dark-variant);
+  font-size: 48px;
+  color: black;
 }
 
 h3 {
-  font-size: 26px;
-  color: var(--color-black);
+  font-size: 28px;
+  color: black;
 }
 
 h4 {
-  font-size: 19px;
-  color: var(--color-black);
+  font-size: 26px;
+  color: black;
 }
 
 h5 {
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-black);
+  color: black;
 }
 
 a {
   font-size: 24px;
-  color: var(--color-white);
+  color: white;
 }
 
 a:hover {
-  color: var(--color-yellow);
+  color: #ff6200;
 }
 
 p {
   font-size: 17px;
   line-height: 140%;
-  color: var(--color-dark-variant);M 
+  color: black;
 }
 
 img {
@@ -73,9 +64,13 @@ img {
   display: block;
 }
 
+body {
+  padding-bottom: 100px;
+}
+
 .heading {
   text-align: center;
-  }
+}
 
 .links {
   text-decoration: underline;
@@ -90,34 +85,33 @@ img {
   display: inline-block;
   width: fit-content;
   padding: 1rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 1rem;
   cursor: pointer;
   color: black;
-  border: 2px solid var(--color-dark-variant);
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   font-size: 14px;
-  transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--color-yellow);
-  color: var(--color-black);
+  background: #ff6200;
+  color: white;
 }
 
 .btn-dark {
   display: inline-block;
   width: fit-content;
   padding: 1rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 1rem;
   cursor: pointer;
-  color: var(--color-white);
-  background-color: #000000;
-  border: 2px solid var(--color-dark-variant);
+  color: white;
+  background-color: black;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,8 +121,8 @@ img {
 }
 
 .btn-dark:hover {
-  color: var(--color-black);
-  background-color: var(--color-yellow);
+  color: white;
+  background-color: #ff6200;
 }
 
 .icon1 {
@@ -150,7 +144,8 @@ nav {
   width: 100%;
   display: grid;
   place-items: center;
-  background: var(--color-black);
+  background: black;
+  border-bottom: solid 2px #ff6200;
 }
 
 .nav-container {
@@ -160,30 +155,29 @@ nav {
   height: 100%;
 }
 
-.logo {
-  font-size: 32px;
-  color: var(--color-yellow) !important;
-  text-decoration: none !important;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
+
+.logo {
+  width: 200px;
+  height: auto;
+}
 /*...................... End Nav Bar ......................*/
 
-.subtitle {
-  padding: 100px;
-  color: var(--color-black);
-  background-color: yellow;
-  text-align: center;
-}
 
 /*...................... Start Header Section ......................*/
 header {
   padding-top: 5rem;
 }
+
+.header {
+  background-color: white;
+  padding: 50px;
+}
+
 .header-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,6 +190,7 @@ header {
   border-radius: 200px;
   overflow: hidden;
 }
+
 .header-right {
   text-align: center;
   margin: auto;
@@ -209,7 +204,7 @@ header {
   margin-top: 0.4rem;
 }
 
-.header-right .header-action-aria {
+.header-right .header-action-area {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
@@ -233,10 +228,10 @@ header {
 .about-container {
   display: flex;
   gap: 4rem;
-  }
+}
 
 .about-left {
-  border-right: 3px solid var(--color-dark-variant);
+  border-right: 3px solid #ff6200;
   padding: 40px;
   width: 30%;
 }
@@ -244,28 +239,10 @@ header {
 .about-right {
   width: 70%;
 }
-
-.basic-edu {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 30px;
-}
-
-.edu-box {
-  padding: 24px;
-  text-align: center;
-  border: 1px solid var(--color-dark-variant);
-  border-radius: 30px;
-  width: 100%;
-}
-
-.edu-box img {
-  margin: auto;
-}
-/*...................... End Projects Section ......................*/
+/*...................... End About Section ......................*/
 
 
-
+/*...................... Start Projects Section ......................*/
 
 #Projects {
   margin-top: 100px;
@@ -277,10 +254,10 @@ header {
 }
 
 .projects-left {
-  border-right: 3px solid var(--color-dark-variant);
+  border-right: 3px solid #ff6200;
   padding: 40px;
   width: 30%;
-  }
+}
 
 .projects-right {
   width: 70%;
@@ -288,7 +265,7 @@ header {
 
 #projectGrid {
   display: grid;
-    grid-template-rows: 500px 300px 300px;
+  grid-template-rows: 500px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "webmaster webmaster"
@@ -331,15 +308,14 @@ header {
 }
 
 .heading {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   padding: 15px;
   height: 55px;
   color: white;
   font-size: 18px;
   border-bottom: 5px solid #ff6200;
 }
-/*...................... End Experience Section ......................*/
-
+/*...................... End Projects Section ......................*/
 
 
 /*...................... Start Contact Section ......................*/
@@ -350,10 +326,10 @@ header {
 .contact-container {
   display: flex;
   gap: 4rem;
-  }
+}
 
 .contact-left {
-  border-right: 3px solid var(--color-dark-variant);
+  border-right: 3px solid #ff6200;
   padding: 40px;
   width: 30%;
 }
@@ -366,7 +342,10 @@ header {
   gap: 50px;
 }
 
-.email, .linkedin, .number, .github {
+.email,
+.linkedin,
+.number,
+.github {
   display: flex;
   align-items: center;
   padding: 20px;

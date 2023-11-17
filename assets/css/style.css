@@ -81,28 +81,8 @@ body {
   text-align: center;
 }
 
+
 .btn {
-  display: inline-block;
-  width: fit-content;
-  padding: 1rem;
-  width: 10rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  color: black;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.btn:hover {
-  background: #ff6200;
-  color: white;
-}
-
-.btn-dark {
   display: inline-block;
   width: fit-content;
   padding: 1rem;
@@ -120,7 +100,7 @@ body {
   transition: var(--transition);
 }
 
-.btn-dark:hover {
+.btn:hover {
   color: white;
   background-color: #ff6200;
 }
@@ -197,7 +177,7 @@ header {
 }
 
 .header-right p {
-  color: var(--color-dark-variant);
+  color: rgb(19, 19, 19);
 }
 
 .header-right h2 {
@@ -296,6 +276,7 @@ header {
 #tinasbeautyrooms {
   grid-area: tinasbeautyrooms;
   background-image: url("../images/tinas.png");
+  
 }
 
 .projectGridArea {
